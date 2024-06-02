@@ -1,44 +1,36 @@
-[debug] [2024-05-11T13:15:16.656Z] ----------------------------------------------------------------------
-[debug] [2024-05-11T13:15:16.657Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
-[debug] [2024-05-11T13:15:16.657Z] CLI Version:   12.7.0
-[debug] [2024-05-11T13:15:16.657Z] Platform:      darwin
-[debug] [2024-05-11T13:15:16.657Z] Node Version:  v18.14.0
-[debug] [2024-05-11T13:15:16.658Z] Time:          Sat May 11 2024 22:15:16 GMT+0900 (대한민국 표준시)
-[debug] [2024-05-11T13:15:16.658Z] ----------------------------------------------------------------------
+[debug] [2024-05-19T07:19:22.973Z] ----------------------------------------------------------------------
+[debug] [2024-05-19T07:19:22.974Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2024-05-19T07:19:22.974Z] CLI Version:   12.7.0
+[debug] [2024-05-19T07:19:22.974Z] Platform:      darwin
+[debug] [2024-05-19T07:19:22.974Z] Node Version:  v18.14.0
+[debug] [2024-05-19T07:19:22.975Z] Time:          Sun May 19 2024 16:19:22 GMT+0900 (대한민국 표준시)
+[debug] [2024-05-19T07:19:22.975Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-05-11T13:15:16.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-05-11T13:15:16.720Z] > authorizing via signed-in user (malddong.dev@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2024-05-11T13:15:17.198Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-05-11T13:15:17.198Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2024-05-11T13:15:17.204Z] [hub] writing locator at /var/folders/vv/0zmlwdkn5h50z70ph4fplq040000gn/T/hub-skoob-d5938.json
-[debug] [2024-05-11T13:15:17.514Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-05-11T13:15:17.514Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2024-05-11T13:15:17.514Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2024-05-11T13:15:17.516Z] defaultcredentials: writing to file /Users/leo/.config/firebase/malddong_dev_gmail.com_application_default_credentials.json
-[debug] [2024-05-11T13:15:17.519Z] Setting GAC to /Users/leo/.config/firebase/malddong_dev_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/leo/.config/firebase/malddong_dev_gmail.com_application_default_credentials.json"}}
-[debug] [2024-05-11T13:15:17.520Z] > refreshing access token with scopes: []
-[debug] [2024-05-11T13:15:17.520Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-05-11T13:15:17.521Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-05-11T13:15:17.753Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2024-05-11T13:15:17.753Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-05-11T13:15:17.762Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig [none]
-[debug] [2024-05-11T13:15:19.768Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig 200
-[debug] [2024-05-11T13:15:19.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig {"projectId":"skoob-d5938","databaseURL":"https://skoob-d5938-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"skoob-d5938.appspot.com","locationId":"asia-northeast3"}
-[debug] [2024-05-11T13:15:19.784Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2024-05-11T13:15:19.784Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2024-05-11T13:15:19.784Z] Starting Emulator UI with command {"binary":"node","args":["/Users/leo/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/leo/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2024-05-11T13:15:19.846Z] Web / API server started at 127.0.0.1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2024-05-11T13:15:19.847Z] Web / API server started at ::1:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
-[info] i  functions: Watching "/Users/leo/Desktop/fun/programming/skoob_function_api/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/leo/Desktop/fun/programming/skoob_function_api/functions\" for Cloud Functions..."}}
-[debug] [2024-05-11T13:15:20.043Z] Validating nodejs source
+[debug] [2024-05-19T07:19:23.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-19T07:19:23.014Z] > authorizing via signed-in user (malddong.dev@gmail.com)
+[debug] [2024-05-19T07:19:23.014Z] [iam] checking project skoob-d5938 for permissions ["firebase.projects.get"]
+[debug] [2024-05-19T07:19:23.014Z] > refreshing access token with scopes: []
+[debug] [2024-05-19T07:19:23.015Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-19T07:19:23.015Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-19T07:19:23.266Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-19T07:19:23.266Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-19T07:19:23.273Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skoob-d5938:testIamPermissions [none]
+[debug] [2024-05-19T07:19:23.273Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/skoob-d5938:testIamPermissions x-goog-quota-user=projects/skoob-d5938
+[debug] [2024-05-19T07:19:23.273Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skoob-d5938:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-19T07:19:24.092Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skoob-d5938:testIamPermissions 200
+[debug] [2024-05-19T07:19:24.093Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skoob-d5938:testIamPermissions {"permissions":["firebase.projects.get"]}
+[warn] ⚠  functions: Functions Emulator unable to start on port 5000, starting on 5001 instead. {"metadata":{"emulator":{"name":"functions"},"message":"Functions Emulator unable to start on port 5000, starting on 5001 instead."}}
+[debug] [2024-05-19T07:19:24.305Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-05-19T07:19:24.305Z] defaultcredentials: writing to file /Users/leo/.config/firebase/malddong_dev_gmail.com_application_default_credentials.json
+[debug] [2024-05-19T07:19:24.306Z] DEBUG: Setting GAC to /Users/leo/.config/firebase/malddong_dev_gmail.com_application_default_credentials.json
+[debug] [2024-05-19T07:19:24.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig [none]
+[debug] [2024-05-19T07:19:25.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig 200
+[debug] [2024-05-19T07:19:25.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skoob-d5938/adminSdkConfig {"projectId":"skoob-d5938","databaseURL":"https://skoob-d5938-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"skoob-d5938.appspot.com","locationId":"asia-northeast3"}
+[debug] [2024-05-19T07:19:25.989Z] [functions] Watching "/Users/leo/Desktop/fun/programming/skoob_function_api/functions" for Cloud Functions...
+[debug] [2024-05-19T07:19:25.998Z] Validating nodejs source
 [warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
 [warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
-[debug] [2024-05-11T13:15:20.366Z] > [functions] package.json contents: {
+[debug] [2024-05-19T07:19:26.341Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -61,105 +53,161 @@
   },
   "private": true
 }
-[debug] [2024-05-11T13:15:20.366Z] Building nodejs source
-[debug] [2024-05-11T13:15:20.366Z] Failed to find version of module node: reached end of search path /Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules
+[debug] [2024-05-19T07:19:26.341Z] Building nodejs source
+[debug] [2024-05-19T07:19:26.341Z] Failed to find version of module node: reached end of search path /Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules
 [info] ✔  functions: Using node@18 from host. 
-[debug] [2024-05-11T13:15:20.368Z] Could not find functions.yaml. Must use http discovery
-[debug] [2024-05-11T13:15:20.371Z] Found firebase-functions binary at '/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/.bin/firebase-functions'
-[info] Serving at port 8548
+[debug] [2024-05-19T07:19:26.343Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-05-19T07:19:26.347Z] Found firebase-functions binary at '/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8932
 
-[debug] [2024-05-11T13:15:20.530Z] Got response from /__/functions.yaml {"endpoints":{"sendStatusUpdatePushMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["asia-northeast2"],"httpsTrigger":{},"entryPoint":"sendStatusUpdatePushMessage"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[info] ✔  functions: Loaded functions definitions from source: sendStatusUpdatePushMessage. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: sendStatusUpdatePushMessage."}}
-[info] ✔  functions[asia-northeast2-sendStatusUpdatePushMessage]: http function initialized (http://127.0.0.1:5001/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage)."}}
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4000/               │
-└─────────────────────────────────────────────────────────────┘
+[debug] [2024-05-19T07:19:26.506Z] Got response from /__/functions.yaml {"endpoints":{"sendStatusUpdatePushMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["asia-northeast2"],"httpsTrigger":{},"entryPoint":"sendStatusUpdatePushMessage"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-05-19T07:19:26.514Z] [functions] Loaded functions definitions from source: sendStatusUpdatePushMessage.
+[debug] [2024-05-19T07:19:26.514Z] [functions[asia-northeast2-sendStatusUpdatePushMessage]] http function initialized (http://127.0.0.1:5001/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage).
+[info] i  functions: Loaded functions: sendStatusUpdatePushMessage 
+[warn] ⚠  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
+[debug] [2024-05-19T07:19:27.530Z] [work-queue] {"queuedWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-19T07:19:27.530Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-05-19T07:19:27.531Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-19T07:19:27.530Z"],"workRunningCount":1}
+[debug] [2024-05-19T07:19:27.531Z] Accepted request POST /skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage --> asia-northeast2-sendStatusUpdatePushMessage
+[debug] [2024-05-19T07:19:27.538Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2024-05-19T07:19:27.539Z] DEBUG: [functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/
+[debug] [2024-05-19T07:19:27.544Z] DEBUG: [worker-pool] addWorker(asia-northeast2-sendStatusUpdatePushMessage)
+[debug] [2024-05-19T07:19:27.545Z] DEBUG: [worker-pool] Adding worker with key asia-northeast2-sendStatusUpdatePushMessage, total=1
+[debug] [2024-05-19T07:19:27.887Z] DEBUG: [runtime-status] [55481] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2024-05-19T07:19:27.887Z] DEBUG: [runtime-status] [55481] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}
+[debug] [2024-05-19T07:19:27.887Z] DEBUG: [runtime-status] [55481] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2024-05-19T07:19:27.888Z] DEBUG: [runtime-status] [55481] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}
+[debug] [2024-05-19T07:19:27.953Z] DEBUG: [runtime-status] [55481] Checked functions.config() {"config":{}}
+[debug] [2024-05-19T07:19:27.953Z] DEBUG: [runtime-status] [55481] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}}
+[debug] [2024-05-19T07:19:27.953Z] DEBUG: [runtime-status] [55481] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}
+[debug] [2024-05-19T07:19:27.953Z] DEBUG: [runtime-status] [55481] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2024-05-19T07:19:27.954Z] DEBUG: [runtime-status] [55481] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}
+[debug] [2024-05-19T07:19:27.954Z] DEBUG: [runtime-status] [55481] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2024-05-19T07:19:27.955Z] DEBUG: [runtime-status] [55481] initializeApp(DEFAULT) {"storageBucket":"skoob-d5938.appspot.com","databaseURL":"https://skoob-d5938-default-rtdb.asia-southeast1.firebasedatabase.app","projectId":"skoob-d5938"}
+[debug] [2024-05-19T07:19:27.960Z] DEBUG: [runtime-status] [55481] Functions runtime initialized. {"cwd":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions","node_version":"18.14.0"}
+[debug] [2024-05-19T07:19:27.961Z] DEBUG: [runtime-status] [55481] Listening to port: /var/folders/vv/0zmlwdkn5h50z70ph4fplq040000gn/T/fire_emu_9675faf1983a8ae7.sock
+[debug] [2024-05-19T07:19:28.059Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: IDLE
+[debug] [2024-05-19T07:19:28.059Z] DEBUG: [worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage)
+[debug] [2024-05-19T07:19:28.059Z] [functions] Beginning execution of "asia-northeast2-sendStatusUpdatePushMessage"
+[debug] [2024-05-19T07:19:28.060Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: BUSY
+[info] >  {"severity":"INFO","message":"projects/skoob-d5938/messages/1716103168605389"} {"user":{"severity":"INFO","message":"projects/skoob-d5938/messages/1716103168605389"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"projects/skoob-d5938/messages/1716103168605389\"}"}}
+[info] >  SENT MESSAGE {"user":"SENT MESSAGE","metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m SENT MESSAGE"}}
+[info] >  SENT MESSAGE {"user":"SENT MESSAGE","metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m SENT MESSAGE"}}
+[info] >  SENT MESSAGE {"user":"SENT MESSAGE","metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m SENT MESSAGE"}}
+[debug] [2024-05-19T07:19:28.943Z] DEBUG: Finishing up request with event=pause
+[debug] [2024-05-19T07:19:28.943Z] [functions] Finished "asia-northeast2-sendStatusUpdatePushMessage" in 883.680375ms
+[debug] [2024-05-19T07:19:28.943Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: IDLE
+[debug] [2024-05-19T07:19:28.943Z] DEBUG: Finishing up request with event=finish
+[debug] [2024-05-19T07:19:28.944Z] DEBUG: Finishing up request with event=close
+[debug] [2024-05-19T07:19:28.944Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-05-19T07:34:30.119Z] DEBUG: File /Users/leo/Desktop/fun/programming/skoob_function_api/functions/service/messageService.js changed, reloading triggers
+[debug] [2024-05-19T07:34:31.122Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-05-19T07:34:31.564Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-05-19T07:34:31.564Z] Building nodejs source
+[debug] [2024-05-19T07:34:31.564Z] Failed to find version of module node: reached end of search path /Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-05-19T07:34:31.564Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-05-19T07:34:31.565Z] Found firebase-functions binary at '/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8846
 
-┌───────────┬────────────────┬─────────────────────────────────┐
-│ Emulator  │ Host:Port      │ View in Emulator UI             │
-├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
-└───────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub running at 127.0.0.1:4400
-  Other reserved ports: 4500
+[debug] [2024-05-19T07:34:31.848Z] Got response from /__/functions.yaml {"endpoints":{"sendStatusUpdatePushMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["asia-northeast2"],"httpsTrigger":{},"entryPoint":"sendStatusUpdatePushMessage"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-05-19T07:34:31.855Z] [functions] Loaded functions definitions from source: sendStatusUpdatePushMessage.
+[debug] [2024-05-19T07:34:31.855Z] DEBUG: [worker-pool] Shutting down IDLE worker (asia-northeast2-sendStatusUpdatePushMessage)
+[debug] [2024-05-19T07:34:31.855Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: FINISHING
+[debug] [2024-05-19T07:34:31.859Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: exited
+[debug] [2024-05-19T07:34:31.859Z] DEBUG: [worker-asia-northeast2-sendStatusUpdatePushMessage-b788daa9-aafe-49a0-a135-39e201007a62]: FINISHED
+[debug] [2024-05-19T08:31:02.867Z] DEBUG: File /Users/leo/Desktop/fun/programming/skoob_function_api/functions/service/messageService.js changed, reloading triggers
+[debug] [2024-05-19T08:31:03.873Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-05-19T08:31:04.333Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-05-19T08:31:04.333Z] Building nodejs source
+[debug] [2024-05-19T08:31:04.333Z] Failed to find version of module node: reached end of search path /Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-05-19T08:31:04.333Z] DEBUG: File /Users/leo/Desktop/fun/programming/skoob_function_api/functions/service/messageService.js changed, reloading triggers
+[debug] [2024-05-19T08:31:04.333Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-05-19T08:31:04.335Z] Found firebase-functions binary at '/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8829
 
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[debug] [2024-05-11T13:15:36.189Z] [work-queue] {"queuedWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:15:36.189Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-05-11T13:15:36.190Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:15:36.189Z"],"workRunningCount":1}
-[debug] [2024-05-11T13:15:36.190Z] Accepted request POST /skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage --> asia-northeast2-sendStatusUpdatePushMessage
-[debug] [2024-05-11T13:15:36.196Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-05-11T13:15:36.197Z] [functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/"}}
-[debug] [2024-05-11T13:15:36.203Z] [worker-pool] addWorker(asia-northeast2-sendStatusUpdatePushMessage) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-northeast2-sendStatusUpdatePushMessage)"}}
-[debug] [2024-05-11T13:15:36.204Z] [worker-pool] Adding worker with key asia-northeast2-sendStatusUpdatePushMessage, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-northeast2-sendStatusUpdatePushMessage, total=1"}}
-[debug] [2024-05-11T13:15:36.540Z] [runtime-status] [37053] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.541Z] [runtime-status] [37053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.541Z] [runtime-status] [37053] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2024-05-11T13:15:36.541Z] [runtime-status] [37053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.609Z] [runtime-status] [37053] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Checked functions.config() {\"config\":{}}"}}
-[debug] [2024-05-11T13:15:36.609Z] [runtime-status] [37053] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
-[debug] [2024-05-11T13:15:36.610Z] [runtime-status] [37053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.610Z] [runtime-status] [37053] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.610Z] [runtime-status] [37053] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2024-05-11T13:15:36.611Z] [runtime-status] [37053] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2024-05-11T13:15:36.612Z] [runtime-status] [37053] initializeApp(DEFAULT) {"storageBucket":"skoob-d5938.appspot.com","databaseURL":"https://skoob-d5938-default-rtdb.asia-southeast1.firebasedatabase.app","projectId":"skoob-d5938"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] initializeApp(DEFAULT) {\"storageBucket\":\"skoob-d5938.appspot.com\",\"databaseURL\":\"https://skoob-d5938-default-rtdb.asia-southeast1.firebasedatabase.app\",\"projectId\":\"skoob-d5938\"}"}}
-[debug] [2024-05-11T13:15:36.618Z] [runtime-status] [37053] Functions runtime initialized. {"cwd":"/Users/leo/Desktop/fun/programming/skoob_function_api/functions","node_version":"18.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Functions runtime initialized. {\"cwd\":\"/Users/leo/Desktop/fun/programming/skoob_function_api/functions\",\"node_version\":\"18.14.0\"}"}}
-[debug] [2024-05-11T13:15:36.618Z] [runtime-status] [37053] Listening to port: /var/folders/vv/0zmlwdkn5h50z70ph4fplq040000gn/T/fire_emu_1ccf23329a72f641.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[runtime-status] [37053] Listening to port: /var/folders/vv/0zmlwdkn5h50z70ph4fplq040000gn/T/fire_emu_1ccf23329a72f641.sock"}}
-[debug] [2024-05-11T13:15:36.715Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE"}}
-[debug] [2024-05-11T13:15:36.715Z] [worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage)"}}
-[info] i  functions: Beginning execution of "asia-northeast2-sendStatusUpdatePushMessage" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Beginning execution of \"asia-northeast2-sendStatusUpdatePushMessage\""}}
-[debug] [2024-05-11T13:15:36.716Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY"}}
-[debug] [2024-05-11T13:15:36.732Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "asia-northeast2-sendStatusUpdatePushMessage" in 15.890291ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finished \"asia-northeast2-sendStatusUpdatePushMessage\" in 15.890291ms"}}
-[debug] [2024-05-11T13:15:36.732Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE"}}
-[debug] [2024-05-11T13:15:36.732Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-05-11T13:15:36.732Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-05-11T13:15:36.732Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >  {"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433337303440%dfe52df9dfe52df9"} {"user":{"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433337303440%dfe52df9dfe52df9"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"projects/skoob-d5938/messages/0:1715433337303440%dfe52df9dfe52df9\"}"}}
-[debug] [2024-05-11T13:15:43.576Z] [work-queue] {"queuedWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:15:43.576Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-05-11T13:15:43.576Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:15:43.576Z"],"workRunningCount":1}
-[debug] [2024-05-11T13:15:43.577Z] Accepted request POST /skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage --> asia-northeast2-sendStatusUpdatePushMessage
-[debug] [2024-05-11T13:15:43.581Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-05-11T13:15:43.582Z] [functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/"}}
-[debug] [2024-05-11T13:15:43.582Z] [worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage)"}}
-[info] i  functions: Beginning execution of "asia-northeast2-sendStatusUpdatePushMessage" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Beginning execution of \"asia-northeast2-sendStatusUpdatePushMessage\""}}
-[debug] [2024-05-11T13:15:43.583Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY"}}
-[debug] [2024-05-11T13:15:43.596Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "asia-northeast2-sendStatusUpdatePushMessage" in 15.268417ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finished \"asia-northeast2-sendStatusUpdatePushMessage\" in 15.268417ms"}}
-[debug] [2024-05-11T13:15:43.598Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE"}}
-[debug] [2024-05-11T13:15:43.599Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-05-11T13:15:43.599Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-05-11T13:15:43.599Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >  {"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433343886758%dfe52df9dfe52df9"} {"user":{"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433343886758%dfe52df9dfe52df9"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"projects/skoob-d5938/messages/0:1715433343886758%dfe52df9dfe52df9\"}"}}
-[debug] [2024-05-11T13:17:42.935Z] [work-queue] {"queuedWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:17:42.935Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-05-11T13:17:42.935Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:17:42.935Z"],"workRunningCount":1}
-[debug] [2024-05-11T13:17:42.935Z] Accepted request POST /skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage --> asia-northeast2-sendStatusUpdatePushMessage
-[debug] [2024-05-11T13:17:42.942Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-05-11T13:17:42.942Z] [functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/"}}
-[debug] [2024-05-11T13:17:42.943Z] [worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage)"}}
-[info] i  functions: Beginning execution of "asia-northeast2-sendStatusUpdatePushMessage" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Beginning execution of \"asia-northeast2-sendStatusUpdatePushMessage\""}}
-[debug] [2024-05-11T13:17:42.943Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY"}}
-[debug] [2024-05-11T13:17:42.957Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "asia-northeast2-sendStatusUpdatePushMessage" in 14.580292ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finished \"asia-northeast2-sendStatusUpdatePushMessage\" in 14.580292ms"}}
-[debug] [2024-05-11T13:17:42.958Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE"}}
-[debug] [2024-05-11T13:17:42.958Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-05-11T13:17:42.958Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-05-11T13:17:42.959Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >  {"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433463203067%dfe52df9dfe52df9"} {"user":{"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433463203067%dfe52df9dfe52df9"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"projects/skoob-d5938/messages/0:1715433463203067%dfe52df9dfe52df9\"}"}}
-[debug] [2024-05-11T13:18:35.569Z] [work-queue] {"queuedWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:18:35.569Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2024-05-11T13:18:35.570Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage-2024-05-11T13:18:35.569Z"],"workRunningCount":1}
-[debug] [2024-05-11T13:18:35.571Z] Accepted request POST /skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage --> asia-northeast2-sendStatusUpdatePushMessage
-[debug] [2024-05-11T13:18:35.576Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2024-05-11T13:18:35.577Z] [functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/skoob-d5938/asia-northeast2/sendStatusUpdatePushMessage, mapping to path=/"}}
-[debug] [2024-05-11T13:18:35.580Z] [worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=asia-northeast2-sendStatusUpdatePushMessage)"}}
-[info] i  functions: Beginning execution of "asia-northeast2-sendStatusUpdatePushMessage" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Beginning execution of \"asia-northeast2-sendStatusUpdatePushMessage\""}}
-[debug] [2024-05-11T13:18:35.583Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: BUSY"}}
-[debug] [2024-05-11T13:18:35.593Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=pause"}}
-[info] i  functions: Finished "asia-northeast2-sendStatusUpdatePushMessage" in 10.185791ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finished \"asia-northeast2-sendStatusUpdatePushMessage\" in 10.185791ms"}}
-[debug] [2024-05-11T13:18:35.594Z] [worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"[worker-asia-northeast2-sendStatusUpdatePushMessage-95e2a818-65df-4024-9ce2-78f9ef306928]: IDLE"}}
-[debug] [2024-05-11T13:18:35.594Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=finish"}}
-[debug] [2024-05-11T13:18:35.594Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"Finishing up request with event=close"}}
-[debug] [2024-05-11T13:18:35.594Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[info] >  {"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433515848264%dfe52df9dfe52df9"} {"user":{"severity":"INFO","message":"projects/skoob-d5938/messages/0:1715433515848264%dfe52df9dfe52df9"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-northeast2-sendStatusUpdatePushMessage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"projects/skoob-d5938/messages/0:1715433515848264%dfe52df9dfe52df9\"}"}}
+[debug] [2024-05-19T08:31:04.617Z] Got response from /__/functions.yaml {"endpoints":{"sendStatusUpdatePushMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["asia-northeast2"],"httpsTrigger":{},"entryPoint":"sendStatusUpdatePushMessage"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-05-19T08:31:04.625Z] [functions] Loaded functions definitions from source: sendStatusUpdatePushMessage.
+[debug] [2024-05-19T08:31:05.338Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-05-19T08:31:05.684Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-05-19T08:31:05.684Z] Building nodejs source
+[debug] [2024-05-19T08:31:05.684Z] Failed to find version of module node: reached end of search path /Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-05-19T08:31:05.684Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-05-19T08:31:05.685Z] Found firebase-functions binary at '/Users/leo/Desktop/fun/programming/skoob_function_api/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8837
+
+[debug] [2024-05-19T08:31:05.846Z] Got response from /__/functions.yaml {"endpoints":{"sendStatusUpdatePushMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["asia-northeast2"],"httpsTrigger":{},"entryPoint":"sendStatusUpdatePushMessage"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-05-19T08:31:05.851Z] [functions] Loaded functions definitions from source: sendStatusUpdatePushMessage.

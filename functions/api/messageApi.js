@@ -2,9 +2,10 @@ const MessageService = require("../service/messageService");
 
 class MessageApi {
   static async sendStatusUpdatePushMessage(request, response) {
-    const { userName, bookTitle, status } = request.body;
+    const { userId, userName, bookTitle, status } = request.body;
 
     await MessageService.sendStatusUpdatePushMessage(
+      userId,
       userName,
       bookTitle,
       status
