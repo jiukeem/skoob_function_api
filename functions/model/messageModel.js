@@ -16,7 +16,7 @@ class MessageModel {
     message["tokens"] = tokens;
 
     try {
-      const result = await admin.messaging().sendMulticast(message);
+      const result = await admin.messaging().sendEachForMulticast(message);
       logger.info(`Successfully sent message: ${result}`);
       if (result.failureCount > 0) {
         const failedTokens = [];
@@ -25,7 +25,7 @@ class MessageModel {
             failedTokens.push(tokens[idx]);
           }
         });
-        logger.warn("List of tokens that caused failures: " + failedTokens);
+        logger.warn(`List of tokens that caused failures: ${failedTokens.length}`);
       }
     } catch (error) {
       logger.error("Error sending multiple messages:", error);
