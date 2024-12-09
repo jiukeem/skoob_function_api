@@ -32,7 +32,7 @@ class MessageModel {
     }
   }
 
-  static async getMessageTemplate(title, body) {
+  static getMessageTemplate(title, body) {
     return {
       notification: {
         title: title,
