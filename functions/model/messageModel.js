@@ -3,7 +3,7 @@ const { logger } = require("firebase-functions");
 
 class MessageModel {
   static async sendSingleFirebaseMessage(title, body, token) {
-    const message = this.getMessageTemplate(title, body);
+    const message = MessageModel.getMessageTemplate(title, body);
     message["token"] = token;
 
     const result = await admin.messaging().send(message);
@@ -12,7 +12,7 @@ class MessageModel {
   }
 
   static async sendMultipleFirebaseMessages(title, body, tokens) {
-    const message = this.getMessageTemplate(title, body);
+    const message = MessageModel.getMessageTemplate(title, body);
     message["tokens"] = tokens;
 
     try {

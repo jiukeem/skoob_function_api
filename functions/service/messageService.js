@@ -1,4 +1,5 @@
 const { MessageModel } = require("../model");
+const { sendSingleFirebaseMessage } = require("../model/messageModel");
 const FirebaseDbService = require("./firebaseDbService");
 
 class MessageService {
@@ -8,7 +9,7 @@ class MessageService {
     bookTitle,
     status
   ) {
-    const title = "SKOOB: 친구 소식";
+    const title = "SKOOB";
     let body;
 
     if (status === "BookReadingStatus.reading") {
@@ -18,17 +19,19 @@ class MessageService {
     }
 
     const friendData = await FirebaseDbService.getFriendList(userId);
-    const tokenList = this.getFriendTokenList(friendData);
+    const tokenList = await this.getFriendTokenList(friendData);
 
     await MessageModel.sendMultipleFirebaseMessages(title, body, tokenList);
 
-    console.log(`push message sent:${body} to ${tokenList}`);
+    console.log(`push message sent:${body} to`);
+    console.log(tokenList)
   }
 
-  static getFriendTokenList(friendData) {
+  static async getFriendTokenList(friendData) {
     const tokenList = [];
     for (const key in friendData) {
-      tokenList.push(friendData[key]["messageToken"]);
+      const token = await FirebaseDbService.getUserToken(key)
+      tokenList.push(token)
     }
 
     return tokenList;
